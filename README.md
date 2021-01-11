@@ -1,0 +1,2 @@
+# bucket
+scoop bucket CN
