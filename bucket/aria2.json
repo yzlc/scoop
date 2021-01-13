@@ -7,13 +7,8 @@
         "64bit": {
             "url": "https://github.com/yzlc/aria2/archive/main.zip",
             "hash": "7BFE2C29EAAC7D465689534ADEDA9C097FDB40F9E292521ACD3FDDAE7C63EFD3",
-            "extract_dir": "aria2"
+            "extract_dir": "aria2-main"
         }
     },
-    "bin": "bin/run.bat",
-    "checkver": {
-        "github": "https://github.com/aria2/aria2",
-        "regex": "/release-(?:[\\d.]+)/aria2-(?<version>[\\d.]+)-win-64bit-build(?<build>[\\d]+)\\.zip",
-        "replace": "${version}-${build}"
-    }
+    "bin": "bin/run.bat"
 }
