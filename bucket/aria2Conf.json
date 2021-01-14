@@ -5,12 +5,12 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/yzlc/aria2Conf/archive/main.zip",
-            "hash": "24EE8A326F25273C5064F2164D7D8B51417CFF890137754D7215B0E8C9F08BB7",
+            "hash": "CB7327B8AF507E1018F7D94482F76C6F98B43FBF2AE9D61733E935C546FEE3CC",
             "extract_dir": "aria2Conf-main"
         },
         "32bit": {
             "url": "https://github.com/yzlc/aria2/aria2Conf/main.zip",
-            "hash": "24EE8A326F25273C5064F2164D7D8B51417CFF890137754D7215B0E8C9F08BB7",
+            "hash": "CB7327B8AF507E1018F7D94482F76C6F98B43FBF2AE9D61733E935C546FEE3CC",
             "extract_dir": "aria2Conf-main"
         }
     },
