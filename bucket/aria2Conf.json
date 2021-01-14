@@ -14,5 +14,5 @@
             "extract_dir": "aria2Conf-main"
         }
     },
-    "bin": "aria2.ps1"
+    "installer": "aria2.ps1"
 }
