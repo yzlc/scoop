@@ -14,5 +14,20 @@
             "extract_dir": "aria2Conf-main"
         }
     },
-    "post_install": ". aria2.ps1"
+    "post_install": [
+        "$aria2Dir = $(appdir aria2)/current/",
+        "Write-Host \"cp aria2 conf\"",
+        "Copy-Item -Path ./aria2/* $aria2Dir/",
+
+        "Write-Host \"add aria2 boot\"",
+        "cd $aria2Dir",
+        "$Shell = New-Object -ComObject (\"WScript.Shell\")",
+        "$Shortcut = $Shell.CreateShortcut(\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp/aria2.lnk\")",
+        "$Shortcut.TargetPath = \"$dir/bin/aria2.vbs\"",
+        "$Shortcut.WorkingDirectory = \"$dir\"",
+        "$Shortcut.Save()",
+
+        "Write-Host \"aria2 run\"",
+        "wscript.exe aria2.vbs"
+    ]
 }
