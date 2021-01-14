@@ -6,12 +6,12 @@
         "64bit": {
             "url": "https://github.com/yzlc/aria2/archive/main.zip",
             "hash": "24EE8A326F25273C5064F2164D7D8B51417CFF890137754D7215B0E8C9F08BB7",
-            "extract_dir": "aria2Conf"
+            "extract_dir": "main"
         },
         "32bit": {
             "url": "https://github.com/yzlc/aria2/archive/main.zip",
             "hash": "24EE8A326F25273C5064F2164D7D8B51417CFF890137754D7215B0E8C9F08BB7",
-            "extract_dir": "aria2Conf"
+            "extract_dir": "main"
         }
     },
     "bin": "aria2.ps1",
