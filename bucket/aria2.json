@@ -38,7 +38,7 @@
         "dir",
         "$client = New-Object System.Net.WebClient",
         "$client.DownloadFile(\"https://github.com/yzlc/aria2/archive/main.zip\",\"./aria2.zip\")",
-        "Unzip-File -ZipFile \"./aria2.zip\" -TargetFolder \"../aria2-$matchVersion-win-64bit-build$matchBuild\"",
+        "Unzip-File -ZipFile \"./aria2.zip\" -TargetFolder \"./\"",
         ". ./run.ps1"
     ]
 }
