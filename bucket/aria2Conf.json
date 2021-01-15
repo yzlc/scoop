@@ -15,8 +15,9 @@
         }
     },
     "post_install": [
+        "Write-Host \"begin...\"",
         "if (Test-Path \"$(appdir aria2)\\current\") { Write-Host \"aria2 exists true\" }",
-        "$aria2Dir = $(appdir aria2)/current/",
+        "$aria2Dir = $(appdir aria2)\\current\\",
         "Write-Host \"cp aria2 conf\"",
         "Copy-Item -Path ./aria2/* $aria2Dir/",
 
