@@ -18,8 +18,8 @@
         "Write-Host \"begin run script...\"",
         ". ./aria2.ps1",
         "Write-Host \"begin...\"",
-        "dir \"$(appdir aria2)\\current\"",
-        "$aria2Dir = \"$(appdir aria2)\\current\"",
+        "dir \"$(appdir aria2 $global)\\current\"",
+        "$aria2Dir = \"$(appdir aria2 $global)\\current\"",
         "Write-Host \"cp aria2 conf\"",
         "Copy-Item -Path ./aria2/* $aria2Dir/",
 
