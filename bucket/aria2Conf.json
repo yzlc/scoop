@@ -18,7 +18,7 @@
         "cd $dir",
         "dir ./",
         "Write-Host \"begin run script...\"",
-        ". aria2.ps1",
+        ". ./aria2.ps1",
         "Write-Host \"begin...\"",
         "dir \"$(appdir aria2 $global)\\current\"",
         "$aria2Dir = \"$(appdir aria2 $global)\\current\"",
