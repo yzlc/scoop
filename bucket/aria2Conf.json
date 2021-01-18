@@ -15,25 +15,6 @@
         }
     },
     "post_install": [
-        "cd $dir",
-        "dir ./",
-        "Write-Host \"begin run script...\"",
-        ". ./aria2.ps1",
-        "Write-Host \"begin...\"",
-        "dir \"$(appdir aria2 $global)\\current\"",
-        "$aria2Dir = \"$(appdir aria2 $global)\\current\"",
-        "Write-Host \"cp aria2 conf\"",
-        "Copy-Item -Path ./aria2/* $aria2Dir/",
-
-        "Write-Host \"add aria2 boot\"",
-        "cd $aria2Dir",
-        "$Shell = New-Object -ComObject (\"WScript.Shell\")",
-        "$Shortcut = $Shell.CreateShortcut(\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp/aria2.lnk\")",
-        "$Shortcut.TargetPath = \"$dir/bin/aria2.vbs\"",
-        "$Shortcut.WorkingDirectory = \"$dir\"",
-        "$Shortcut.Save()",
-
-        "Write-Host \"aria2 run\"",
-        "wscript.exe aria2.vbs"
+        ". ./aria2.ps1"
     ]
 }
