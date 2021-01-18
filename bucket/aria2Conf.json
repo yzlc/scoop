@@ -16,6 +16,6 @@
     },
     "post_install": [
         "cd $dir",
-        ". aria2.ps1"
+        ". ./aria2.ps1"
     ]
 }
