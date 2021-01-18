@@ -15,6 +15,7 @@
         }
     },
     "post_install": [
-        ". \"./aria2.ps1\""
+        "dir",
+        ". aria2.ps1"
     ]
 }
