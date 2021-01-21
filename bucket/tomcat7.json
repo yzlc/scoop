@@ -1,0 +1,22 @@
+{
+	"homepage": "http://tomcat.apache.org/download-70.cgi",
+	"version": "7.0.55",
+	"license": "ASLv2",
+	"architecture": {
+		"64bit": {
+			"url": "http://apache.spinellicreations.com/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55-windows-x64.zip",
+			"hash": "md5:e5757ac157b65086427c17a0b6406e30"
+		},
+		"32bit": {
+			"url": "http://apache.spinellicreations.com/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55-windows-x86.zip",
+			"hash": "md5:7f80646ce8de7a9d4209e1a8ebb84c20"
+		}
+	},
+	"extract_dir": "apache-tomcat-7.0.55",
+	"env_set": {
+		"CATALINA_HOME": "$dir"
+	},
+	"bin": [
+		"bin\\catalina.bat"
+		]
+}
