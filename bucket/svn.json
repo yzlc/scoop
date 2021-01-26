@@ -7,8 +7,7 @@
     "hash": "7a386adbbf9ce26e892f044128f21c70b13695ce7931456c12868776bc680582",
     "installer": {
         "script": [
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\svn.msi`\" -s\" -Verb RunAs",
-            "Remove-Item \"$dir\\svn.msi\""
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\svn.msi`\" -s\" -Verb RunAs"
         ]
     },
     "checkver": {
