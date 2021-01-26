@@ -16,8 +16,12 @@
             "hash": "b49d55a52bc0eab14947c8982c413d9be141c337da1368a24aa0484cbb5e89cd"
         }
     },
-    "extract_dir": "Files\\7-Zip",
-    "bin": "7z.exe",
+    "installer": {
+        "script": [
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\7z1900-x64.msi`\" -s\" -Verb RunAs",
+            "Remove-Item \"$dir\\7z1900-x64.msi\""
+        ]
+    },
     "shortcuts": [
         [
             "7zFM.exe",
