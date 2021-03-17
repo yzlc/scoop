@@ -4,7 +4,8 @@
     "installer": {
         "script": [
             "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\FortiClientSetup.exe`\" -s /quiet\" -Verb RunAs",
-            "Remove-Item \"$dir\\FortiClientSetup.exe\""
+            "Remove-Item \"$dir\\FortiClientSetup.exe\"",
+            "Remove-Item \"C:\\Users\\Public\\Desktop\\FortiClient.lnk\""
         ]
     }
 }
