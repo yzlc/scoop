@@ -5,6 +5,6 @@
     "url": "https://github.com/yzlc/aria2Conf/archive/main.zip",
     "post_install": [
         "cd $dir",
-        ". .\aria2.ps1"
+        "$dir/aria2.ps1"
     ]
 }
