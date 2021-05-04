@@ -3,10 +3,8 @@
     "description": "aria2Conf",
     "homepage": "https://github.com/yzlc/aria2Conf",
     "url": "https://github.com/yzlc/aria2Conf/archive/main.zip",
-    "extract_dir": "aria2Conf",
     "post_install": [
-        "cd $dir",
-        "dir ./",
+        "cd $dir/aria2Conf-main",
         ". ./aria2.ps1"
     ]
 }
