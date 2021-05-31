@@ -1,0 +1,13 @@
+{
+	"homepage": "http://tomcat.apache.org/download-90.cgi",
+	"version": "9.0.46",
+	"license": "ASLv2",
+	"url": "https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46-windows-x64.zip",
+	"extract_dir": "apache-tomcat-9.0.46",
+	"env_set": {
+		"CATALINA_HOME": "$dir"
+	},
+	"bin": [
+		"bin\\catalina.bat"
+		]
+}
