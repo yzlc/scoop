@@ -14,11 +14,17 @@
         ]
     },
     "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi",
-    "extract_dir": "Epic Games",
     "shortcuts": [
         [
             "Launcher\\Portal\\Binaries\\Win32\\EpicGamesLauncher.exe",
             "Epic Games Launcher"
         ]
-    ]
+    ],
+    "installer": {
+        "script": [
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\EpicGamesLauncherInstaller.msi`\" -s /quiet\" -Verb RunAs",
+            "Remove-Item \"$dir\\EpicGamesLauncherInstaller.msi\"",
+            "Remove-Item \"C:\\Users\\Public\\Desktop\\EpicGames.lnk\""
+        ]
+    }
 }
