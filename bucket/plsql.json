@@ -1,0 +1,13 @@
+{
+    "version": "nightly",
+    "description": "plsql",
+    "homepage": "https://www.allroundautomations.com/registered/plsqldev.html",
+    "url": "https://www.allroundautomations.com/files/plsqldev1406x64.msi#/plsqldev1406x64.msi",
+    "installer": {
+        "script": [
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\plsqldev1406x64.msi`\" -s /quiet\" -Verb RunAs",
+            "Remove-Item \"$dir\\plsqldev1406x64.msi\"",
+            "Remove-Item \"C:\\Users\\Public\\Desktop\\plsql.lnk\""
+        ]
+    }
+}
