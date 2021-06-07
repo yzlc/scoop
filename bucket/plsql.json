@@ -12,7 +12,7 @@
     "installer": {
         "script": [
             "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\plsqldev1406x64.msi`\" -s /quiet\" -Verb RunAs",
-            "[environment]::SetEnvironmentvariable(\"NLS_LANG\", \"SIMPLIFIED CHINESE_CHINA.ZHS16GBK\", \"Machine\")"
+            "[environment]::SetEnvironmentvariable(\"NLS_LANG\", \"SIMPLIFIED CHINESE_CHINA.ZHS16GBK\", \"User\")"
         ]
     }
 }
