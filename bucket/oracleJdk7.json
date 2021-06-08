@@ -4,6 +4,9 @@
     "version": "7u80",
     "url": "https://mirrors.huaweicloud.com/java/jdk/7u80-b15/jdk-7u80-windows-x64.exe#/dl.7z",
     "extract_to": "tmp",
+    "cookie": {
+        "oraclelicense": "accept-securebackup-cookie"
+    },
     "installer": {
         "script": [
             "# Java Source (src.zip)",
