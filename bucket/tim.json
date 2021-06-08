@@ -1,13 +1,12 @@
 {
-    "version": "3.3.0.21970",
+    "version": "3.3.5.22018",
     "description": "tencent TIM, lightweight alternative to QQ",
     "homepage": "https://office.qq.com/",
     "license": {
         "identifier": "Unknown",
         "url": "http://play.mobile.qq.com/yy/eim/help/serverinfo.html"
     },
-    "url": "http://dldir1.qq.com/qqfile/qq/PCTIM/TIM3.3.0/TIM3.3.0.21970.exe#/TimSetup.exe",
-    "hash": "8d0b1e2cec14c6a00e4bd800a8d69aea3c021d2826ddd7adbddaa580dd9bf469",
+    "url": "https://dldir1.qq.com/qqfile/qq/PCTIM/TIM3.3.5/TIM3.3.5.22018.exe#/TimSetup.exe",
     "installer": {
         "script": [
             "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\TimSetup.exe`\" -s\" -Verb RunAs",
