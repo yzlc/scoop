@@ -13,7 +13,7 @@
             "DirectX-SDK"
         ]
     },
-    "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi",
+    "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi#/epic.exe",
     "shortcuts": [
         [
             "Launcher\\Portal\\Binaries\\Win32\\EpicGamesLauncher.exe",
@@ -22,7 +22,7 @@
     ],
     "installer": {
         "script": [
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\EpicGamesLauncherInstaller.msi`\" -s /quiet\" -Verb RunAs",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\epic.exe`\" -s /quiet\" -Verb RunAs",
             "Remove-Item \"$dir\\EpicGamesLauncherInstaller.msi\"",
             "Remove-Item \"C:\\Users\\Public\\Desktop\\EpicGames.lnk\""
         ]
