@@ -3,7 +3,7 @@
     "homepage": "https://www.oracle.com/technetwork/java/javase/overview/index.html",
     "version": "8u291",
     "license": "https://www.oracle.com/downloads/licenses/javase-license1.html",
-    "url": "https://github.com/ZvonimirSun/oracle-java/releases/download/8u291/jdk-8u291-windows-x64.exe#/dl.7z#/dl.7z",
+    "url": "https://github.com/ZvonimirSun/oracle-java/releases/download/8u291/jdk-8u291-windows-x64.exe#/dl.7z",
     "hash": "9372a0abf33b38ce8afe31491af0e0b6fecb8b3705a2537709aaabd4ece7ee41",
     "extract_to": "tmp",
     "installer": {
