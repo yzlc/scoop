@@ -1,8 +1,8 @@
 {
-    "description": "Oracle JDK 8",
+    "description": "Oracle JDK 7",
     "homepage": "https://mirrors.huaweicloud.com/java/jdk",
-    "version": "8u202",
-    "url": "https://mirrors.huaweicloud.com/java/jdk/8u202-b08/jdk-8u202-windows-x64.exe#/dl.7z",
+    "version": "7u80",
+    "url": "https://mirrors.huaweicloud.com/java/jdk/7u80-b15/jdk-7u80-windows-x64.exe#/dl.7z",
     "extract_to": "tmp",
     "installer": {
         "script": [
@@ -24,9 +24,5 @@
             "rm -r tmp | out-null",
             "popd"
         ]
-    },
-    "env_add_path": "bin",
-    "env_set": {
-        "JAVA_HOME": "$dir"
     }
 }
