@@ -1,9 +1,9 @@
 {
     "description": "Oracle JDK 8",
-    "homepage": "https://mirrors.huaweicloud.com/java/jdk",
-    "version": "8u202",
+    "homepage": "https://www.oracle.com/technetwork/java/javase/overview/index.html",
+    "version": "8u291",
     "license": "https://www.oracle.com/downloads/licenses/javase-license1.html",
-    "url": "https://mirrors.huaweicloud.com/java/jdk/8u202-b08/jdk-8u202-windows-x64.exe#/dl.7z",
+    "url": "https://github.com/ZvonimirSun/oracle-java/releases/download/8u291/jdk-8u291-windows-x64.exe#/dl.7z#/dl.7z",
     "extract_to": "tmp",
     "cookie": {
         "oraclelicense": "accept-securebackup-cookie"

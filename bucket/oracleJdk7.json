@@ -1,9 +1,9 @@
 {
     "description": "Oracle JDK 7",
-    "homepage": "https://mirrors.huaweicloud.com/java/jdk",
+    "homepage": "https://www.oracle.com/technetwork/java/javase/overview/index.html",
     "version": "7u80",
     "license": "https://www.oracle.com/downloads/licenses/javase-license1.html",
-    "url": "https://mirrors.huaweicloud.com/java/jdk/7u80-b15/jdk-7u80-windows-x64.exe#/dl.7z",
+    "url": "https://files-cdn.liferay.com/mirrors/download.oracle.com/otn-pub/java/jdk/7u80-b15/jdk-7u80-windows-x64.exe#/dl.7z",
     "extract_to": "tmp",
     "cookie": {
         "oraclelicense": "accept-securebackup-cookie"
