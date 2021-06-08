@@ -4,7 +4,7 @@
     "version": "7u80",
     "license": "https://www.oracle.com/downloads/licenses/javase-license1.html",
     "url": "https://github.com/frekele/oracle-java/releases/download/7u80-b15/jdk-7u80-windows-x64.exe#/dl.7z",
-    "hash": "97928ced578cad36f0a23db44a7e7119000d927c",
+    "hash": "4a0f77910f1373f526d6732896b870bc96f2a83e32d8390549331b602482f4ee",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\tools.zip\" \"$dir\"",

@@ -4,7 +4,7 @@
     "version": "8u212",
     "license": "https://www.oracle.com/downloads/licenses/javase-license1.html",
     "url": "https://github.com/frekele/oracle-java/releases/download/8u212-b10/jdk-8u212-windows-x64.exe#/dl.7z",
-    "hash": "47524927f698af58a90b226e1b4c84d3232c21c5",
+    "hash": "330a6396fcc97c57a951170bb9ac5a00b75974da8f002cb7e62fdf09d15018c5",
     "extract_to": "tmp",
     "installer": {
         "script": [
