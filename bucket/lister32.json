@@ -1,0 +1,10 @@
+{
+	"homepage": "https://www.ghisler.com/lister/",
+	"url": "http://ghisler.fileburst.com/addons/lister32.zip",
+	"shortcuts": [
+		[
+			"lister.exe",
+			"lister"
+		]
+	]
+}
