@@ -8,13 +8,8 @@
     "extract_to": "tmp",
     "installer": {
         "script": [
-            "# Java Source (src.zip)",
-            "Expand-7zipArchive \"$dir\\tmp\\.rsrc\\1033\\JAVA_CAB9\\110\" \"$dir\"",
             "# JDK (tools.zip)",
-            "Expand-7zipArchive \"$dir\\tmp\\.rsrc\\1033\\JAVA_CAB10\\111\" \"$dir\\tmp\"",
             "Expand-7zipArchive \"$dir\\tmp\\tools.zip\" \"$dir\"",
-            "# Copyright (COPYRIGHT)",
-            "Expand-7zipArchive \"$dir\\tmp\\.rsrc\\1033\\JAVA_CAB11\\112\" \"$dir\"",
             "# Convert .pack to .jar, and remove .pack",
             "pushd \"$dir\"",
             "ls \"$dir\" -recurse | ? name -match '^[^_].*?\\.(?i)pack$' | % {",
