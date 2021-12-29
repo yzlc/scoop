@@ -2,7 +2,7 @@
     "version": "latest",
     "description": "7zConf",
     "post_install": [
-        "cd $(appdir aria2)/current",
+        "cd $(appdir 7zip)/current",
         "regedit /s install-context.reg"
     ]
 }
