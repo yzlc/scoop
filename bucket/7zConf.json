@@ -1,8 +1,6 @@
 {
     "version": "latest",
     "description": "7zConf",
-    "homepage": "https://github.com/yzlc/aria2Conf",
-    "url": "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/7-zip/install-context.reg",
     "post_install": [
         "cd $(appdir aria2)/current",
         "regedit /s install-context.reg"
