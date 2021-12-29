@@ -5,7 +5,7 @@
     "post_install": [
         "cd $dir",
         "ls",
-        "regedit install-context.reg",
+        "regedit ./install-context.reg",
         "regedit /s install-context.reg"
     ]
 }
