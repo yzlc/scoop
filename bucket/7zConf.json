@@ -4,6 +4,7 @@
     "url": "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/7-zip/install-context.reg",
     "post_install": [
         "ls",
+        "regedit install-context.reg",
         "regedit /s install-context.reg"
     ]
 }
