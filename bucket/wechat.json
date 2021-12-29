@@ -1,8 +1,7 @@
 {
     "homepage": "https://pc.weixin.qq.com/",
     "description": "微信 PC 版",
-    "version": "nightly",
-    "license": "Freeware",
+    "version": "latest",
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/wechat.7z",
     "shortcuts": [
         [
