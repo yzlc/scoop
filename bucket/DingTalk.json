@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.dingtalk.com",
-    "version": "latest",
-    "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/win_downloader/dingtalk_downloader.exe",
+    "version": "6.5.40",
+    "url": "https://webcdn.m.qq.com/spcmgr/download/6.5.40-Release.9059101.exe",
     "installer": {
         "script": [
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\dingtalk_downloader.exe`\" -s /quiet\" -Verb RunAs",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\6.5.40-Release.9059101.exe`\" -s /quiet\" -Verb RunAs",
             "Remove-Item \"$dir\\dingtalk_downloader.exe\"",
             "Remove-Item \"C:\\Users\\Public\\Desktop\\dingtalk.lnk\""
         ]
