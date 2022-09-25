@@ -1,12 +1,12 @@
 {
     "homepage": "https://www.dingtalk.com",
     "version": "latest",
-    "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/win_downloader/dingtalk_downloader.exe#/dl.7z",
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
-    "shortcuts": [
-        [
-            "DingtalkLauncher.exe",
-            "DingTalk"
+    "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/win_downloader/dingtalk_downloader.exe",
+    "installer": {
+        "script": [
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\dingtalk_downloader.exe`\" -s /quiet\" -Verb RunAs",
+            "Remove-Item \"$dir\\dingtalk_downloader.exe\"",
+            "Remove-Item \"C:\\Users\\Public\\Desktop\\dingtalk.lnk\""
         ]
-    ]
+    }
 }
