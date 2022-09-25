@@ -4,7 +4,7 @@
     "url": "https://webcdn.m.qq.com/spcmgr/download/6.5.40-Release.9059101.exe",
     "installer": {
         "script": [
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\6.5.40-Release.9059101.exe`\" -s /s /quiet\" -Verb RunAs",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\6.5.40-Release.9059101.exe`\" -s /s /ncrc\" -Verb RunAs",
             "Remove-Item \"C:\\Users\\Public\\Desktop\\dingtalk.lnk\""
         ]
     }
