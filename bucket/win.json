@@ -5,7 +5,6 @@
     "url": "https://github.com/yzlc/win/archive/main.zip",
     "post_install": [
         "cd $dir/win-main",
-        ". ./config/config.bat",
-        ". ./init/Default.cmd"
+        ". ./config/config.bat"
     ]
 }
