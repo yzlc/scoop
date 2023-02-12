@@ -1,12 +1,12 @@
 {
-    "version": "3.14.8.405",
+    "version": "3.5.6.416",
     "description": "An efficient and reliable video conferencing service powered by Tencent that is built for collaboration.",
     "homepage": "https://meeting.tencent.com/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://meeting.tencent.com/declare.html"
     },
-    "url": "https://updatecdn.meeting.qq.com/cos/0f97110c99b714a31f3aec679a7128b6/TencentMeeting_0300000000_3.14.8.405.publish.officialwebsite.exe#/dl.7z",
+    "url": "https://updatecdn.meeting.qq.com/cos/8d470eda782890abc7cc8cc3c2629cb3/TencentMeeting_0300000000_3.5.6.416.publish.exe#/dl.7z",
     "shortcuts": [
         [
             "wemeetapp.exe",
