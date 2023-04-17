@@ -1,34 +1,36 @@
 {
-    "version": "3.5.6.416",
-    "description": "Tencent Meeting",
-    "homepage": "https://meeting.tencent.com/index.html",
+    "$schema": "https://ghproxy.com/https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "version": "3.15.6.407",
+    "description": "An efficient and reliable video conferencing service powered by Tencent that is built for collaboration.",
+    "homepage": "https://meeting.tencent.com/",
     "license": {
-        "identifier": "Freeware"
+        "identifier": "Proprietary",
+        "url": "https://meeting.tencent.com/declare.html"
     },
-    "url": "https://updatecdn.meeting.qq.com/cos/8d470eda782890abc7cc8cc3c2629cb3/TencentMeeting_0300000000_3.5.6.416.publish.exe#/dl.7z",
-    "hash": "md5:8d470eda782890abc7cc8cc3c2629cb3",
-    "installer": {
-        "script": [
-            "Get-Item \"$dir\\`$_?_\" | Rename-Item -NewName \"$version\"",
-            "Move-Item \"$dir\\wemeetapp_new.exe\" \"$dir\\WeMeet.exe\"",
-            "Remove-Item -R -Path \"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\",\"$dir\\`$TEMP\",\"$dir\\wemeetapp.exe\""
-        ]
-    },
+    "url": "https://updatecdn.meeting.qq.com/cos/390914479e76106f863d8089d0f11049/TencentMeeting_0300000000_3.15.6.407.publish.officialwebsite.exe#/dl.7z",
+    "hash": "md5:390914479e76106f863d8089d0f11049",
+    "post_install": [
+        "Rename-Item \"$dir\\`$_*_\" \"$dir\\$version\"",
+        "Remove-Item \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force -ErrorAction SilentlyContinue",
+        "create_startmenu_shortcuts $manifest \"$original_dir\" $global $architecture *>$null"
+    ],
     "shortcuts": [
         [
-            "WeMeet.exe",
-            "腾讯会议"
+            "wemeetapp.exe",
+            "WeMeet"
         ]
     ],
     "checkver": {
-        "url": "https://bonjour.swoosh.run/post/https:meeting.tencent.com/wemeet-webapi/v2/config/query-download-info?[{%22instance%22:%22windows%22,%22type%22:%220300000000%22}]",
-        "regex": "\"md5\":\"(?<hash>[a-f0-9]+)\".+\"version\":\"([\\d\\.]+)\""
+        "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
+        "regex": "https://(?<url>.+\\.exe).*?\"version\":.*?\"([\\d.]+)\""
     },
     "autoupdate": {
-        "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version.publish.exe#/dl.7z",
+        "url": "https://$matchUrl#/dl.7z",
         "hash": {
-            "url": "https://bonjour.swoosh.run/post/https:meeting.tencent.com/wemeet-webapi/v2/config/query-download-info?[{%22instance%22:%22windows%22,%22type%22:%220300000000%22}]",
-            "find": "$md5"
+            "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
+            "mode": "json",
+            "jsonpath": "$.info-list[0].md5"
         }
     }
 }
