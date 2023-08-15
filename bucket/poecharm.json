@@ -3,7 +3,7 @@
     "description": "Path of Building Chinese version",
     "homepage": "https://github.com/Chuanhsing/PoeCharm",
     "url": "https://github.com/Chuanhsing/PoeCharm/releases/download/v20230815/PoeCharm_v20230815.7z",
-    "bin": "PoeCharm_$matchVersion/PoeCharm.exe",
+    "bin": "PoeCharm_{version}\\PoeCharm.exe",
     "checkver": {
         "url": "https://github.com/Chuanhsing/PoeCharm/releases/latest",
         "regex": "PoeCharm_v(\\d+(\\.\\d+)*).*\\.7z"
