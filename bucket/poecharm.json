@@ -5,6 +5,12 @@
     "url": "https://github.com/Chuanhsing/PoeCharm/releases/download/v20230815/PoeCharm_v20230815.7z",
     "extract_dir": "PoeCharm_v20230815",
     "bin": "PoeCharm.exe",
+    "shortcuts": [
+        [
+            "PoeCharm.exe",
+            "PoeCharm"
+        ]
+    ],
     "checkver": {
         "url": "https://github.com/Chuanhsing/PoeCharm/releases/latest",
         "regex": "PoeCharm_v(\\d+(\\.\\d+)*).*\\.7z"
