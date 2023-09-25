@@ -25,7 +25,7 @@ scoop bucket add yzlc https://github.com/yzlc/scoop
 scoop install vscode oraclejdk8 idea wechat wxwork wemeet DingTalk mobaXterm tortoisesvn fortiClient tomcat7 vcredist2022 win lister awake DBeaver
 
 #extras
-#scoop install potplayer anki steam anaconda3 another-redis-desktop-manager everything jd-gui calibre
+#scoop install potplayer anki steam anaconda3 another-redis-desktop-manager everything jd-gui calibre rufus
 
 #versions
 #scoop install nodejs14 mysql57 python27
