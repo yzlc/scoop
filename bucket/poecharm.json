@@ -2,8 +2,8 @@
     "version": "20230824",
     "description": "Path of Building Chinese version",
     "homepage": "https://github.com/Chuanhsing/PoeCharm",
-    "url": "https://github.com/Chuanhsing/PoeCharm/releases/download/v20230824/PoeCharm_v20230824.7z",
-    "extract_dir": "PoeCharm_v20230824",
+    "url": "https://github.com/Chuanhsing/PoeCharm/releases/download/v20230824/PoeCharm_v20230824_2.7z",
+    "extract_dir": "PoeCharm_v20230824_2",
     "bin": "PoeCharm.exe",
     "shortcuts": [
         [
