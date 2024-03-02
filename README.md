@@ -16,16 +16,16 @@ scoop bucket add extras
 scoop bucket add versions
 scoop bucket add yzlc https://github.com/yzlc/scoop
 
-scoop install wechat wxwork wemeet DingTalk win lister awake vscode oraclejdk8 idea mobaXterm tortoisesvn DBeaver
+scoop install wechat wxwork win lister foxmail awake vscode oraclejdk8 idea mobaXterm tortoisesvn DBeaver nodejs14
 scoop install vcredist2022 fortiClient
 
 #extras
-#scoop install potplayer anki steam anaconda3 another-redis-desktop-manager everything jd-gui calibre rufus
+#scoop install potplayer anki steam another-redis-desktop-manager everything jd-gui calibre rufus
 
 #versions
-#scoop install nodejs14 mysql57 python27 tomcat7
+#scoop install mysql57 python27 tomcat7
 
 # yzlc
 #scoop install poecharm Awakened-PoE-Trade poe-lurker
-#scoop install Charles oracleClient tomcat9 oraclejdk7 tim foxmail
+#scoop install Charles oracleClient tomcat9 oraclejdk7 tim wemeet DingTalk
 ```
