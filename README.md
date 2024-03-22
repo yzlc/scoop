@@ -16,7 +16,7 @@ scoop bucket add extras
 scoop bucket add versions
 scoop bucket add yzlc https://github.com/yzlc/scoop
 
-scoop install wechat wxwork win lister foxmail awake vscode oraclejdk8 idea mobaXterm tortoisesvn DBeaver nodejs14
+scoop install wechat wxwork win lister foxmail awake vscode oraclejdk8 idea mobaXterm svn DBeaver nodejs14
 scoop install vcredist2022 fortiClient
 
 #extras
