@@ -13,6 +13,7 @@ scoop config proxy 127.0.0.1:10809
 git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
 
 scoop bucket add extras
+# git clone --depth=1 https://github.com/lukesampson/scoop-extras.git
 scoop bucket add versions
 scoop bucket add yzlc https://github.com/yzlc/scoop
 
