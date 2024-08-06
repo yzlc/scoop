@@ -1,10 +1,9 @@
 {
     "description": "Oracle JDK 8",
     "homepage": "https://www.oracle.com/technetwork/java/javase/overview/index.html",
-    "version": "8u212",
+    "version": "8u202",
     "license": "https://www.oracle.com/downloads/licenses/javase-license1.html",
-    "url": "https://github.com/frekele/oracle-java/releases/download/8u212-b10/jdk-8u212-windows-x64.exe#/dl.7z",
-    "hash": "330a6396fcc97c57a951170bb9ac5a00b75974da8f002cb7e62fdf09d15018c5",
+    "url": "https://github.com/frekele/oracle-java/releases/download/8u202-b08/jdk-8u202-windows-x64.exe#/dl.7z",
     "extract_to": "tmp",
     "installer": {
         "script": [
