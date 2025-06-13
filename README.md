@@ -27,6 +27,7 @@ scoop install vcredist2022 fortiClient
 #scoop install mysql57 python27 tomcat7
 
 # yzlc
+#scoop install oracleClient tomcat9 oraclejdk7 tim wemeet DingTalk
+#scoop bucket add games
 #scoop install poecharm Awakened-PoE-Trade poe-lurker
-#scoop install Charles oracleClient tomcat9 oraclejdk7 tim wemeet DingTalk
 ```

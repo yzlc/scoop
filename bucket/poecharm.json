@@ -15,7 +15,7 @@
         "scoop install path-of-building-community",
         "",
         "# 创建符号链接到PoeCharm目录",
-        "$pobPath = (scoop prefix path-of-building-community)",
+        "$pobPath = (scoop prefix pathofbuilding-community)",
         "if (!(Test-Path \"$dir\\PathOfBuildingCommunity\")) {",
         "   New-Item -ItemType Junction -Path \"$dir\\PathOfBuildingCommunity\" -Target \"$pobPath\" | Out-Null",
         "}"
