@@ -12,7 +12,7 @@
     "depends": "pathofbuilding-community",
     "pre_install": [
         "# 安装Path of Building依赖",
-        "scoop install path-of-building-community",
+        "scoop install pathofbuilding-community",
         "",
         "# 创建符号链接到PoeCharm目录",
         "$pobPath = (scoop prefix pathofbuilding-community)",
