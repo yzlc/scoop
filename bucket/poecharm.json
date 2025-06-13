@@ -3,7 +3,7 @@
     "description": "Path of Building Chinese version",
     "homepage": "https://github.com/Chuanhsing/PoeCharm2",
     "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v20250410.zip",
-    "extract_dir": "PoeCharm_v20250410",
+    "extract_dir": "v20250410",
     "bin": "PoeCharm.exe",
     "shortcuts": [
         [
@@ -14,6 +14,6 @@
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v$version.zip",
-        "extract_dir": "PoeCharm_v$version"
+        "extract_dir": "v$version"
     }
 }
