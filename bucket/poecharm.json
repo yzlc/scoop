@@ -1,19 +1,63 @@
 {
-    "version": "20250410",
-    "description": "Path of Building Chinese version",
+    "version": "1.0.0",
+    "description": "PoeCharm with integrated Path of Building Community Edition",
     "homepage": "https://github.com/Chuanhsing/PoeCharm2",
-    "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v20250410.zip",
-    "extract_dir": "v20250410",
-    "bin": "PoeCharm.exe",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://api.github.com/repos/Chuanhsing/PoeCharm2/releases/latest",
+                "https://api.github.com/repos/PathOfBuildingCommunity/PathOfBuilding/releases/latest"
+            ],
+            "hash": [
+                "",
+                ""
+            ]
+        }
+    },
+    "pre_install": [
+        "# 解析PoeCharm下载URL",
+        "$pcharm = (Invoke-RestMethod https://api.github.com/repos/Chuanhsing/PoeCharm2/releases/latest).assets",
+        "$pcharmUrl = $pcharm | Where-Object { $_.name -match 'zip$' } | Select-Object -ExpandProperty browser_download_url -First 1",
+        "# 解析PoB下载URL",
+        "$pob = (Invoke-RestMethod https://api.github.com/repos/PathOfBuildingCommunity/PathOfBuilding/releases/latest).assets",
+        "$pobUrl = $pob | Where-Object { $_.name -match 'Portable.*zip$' } | Select-Object -ExpandProperty browser_download_url -First 1",
+        "# 下载文件",
+        "Invoke-WebRequest $pcharmUrl -OutFile \"$dir\\pcharm.zip\"",
+        "Invoke-WebRequest $pobUrl -OutFile \"$dir\\pob.zip\"",
+        "# 解压文件",
+        "Expand-Archive \"$dir\\pcharm.zip\" -DestinationPath \"$dir\" -Force",
+        "Expand-Archive \"$dir\\pob.zip\" -DestinationPath \"$dir\" -Force",
+        "# 清理临时文件",
+        "Remove-Item \"$dir\\*.zip\" -Force",
+        "# 重命名目录",
+        "Get-ChildItem \"$dir\\PoeCharm*\" -Directory | Rename-Item -NewName 'PoeCharm2'",
+        "Get-ChildItem \"$dir\\PathOfBuilding*\" -Directory | Rename-Item -NewName 'PoB'",
+        "# 集成PoB到PoeCharm",
+        "Move-Item \"$dir\\PoB\" \"$dir\\PoeCharm2\\PoB\" -Force"
+    ],
+    "bin": "PoeCharm2\\PoeCharm3.exe",
     "shortcuts": [
         [
-            "PoeCharm.exe",
+            "PoeCharm2\\PoeCharm3.exe",
             "PoeCharm"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/Chuanhsing/PoeCharm2"
+    },
     "autoupdate": {
-        "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v$version.zip",
-        "extract_dir": "v$version"
-    }
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://api.github.com/repos/Chuanhsing/PoeCharm2/releases/latest",
+                    "https://api.github.com/repos/PathOfBuildingCommunity/PathOfBuilding/releases/latest"
+                ]
+            }
+        }
+    },
+    "notes": [
+        "安装完成！PoeCharm已集成最新版Path of Building便携版",
+        "启动程序: PoeCharm3.exe (已添加到开始菜单和scoop路径)"
+    ]
 }
