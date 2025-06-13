@@ -9,7 +9,7 @@
             "extract_dir": "PoeCharm2-20250410"
         }
     },
-    "depends": "path-of-building-community",
+    "depends": "pathofbuilding-community",
     "pre_install": [
         "# 安装Path of Building依赖",
         "scoop install path-of-building-community",
