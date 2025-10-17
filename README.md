@@ -7,7 +7,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 irm get.scoop.sh | iex
 
-scoop install git
+scoop install git aria2
 
 scoop config proxy 127.0.0.1:10808
 git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
