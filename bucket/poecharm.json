@@ -1,12 +1,12 @@
 {
-    "version": "20250410",
+    "version": "20260309",
     "description": "PoeCharm2 - Path of Exile game tools with Path of Building integration",
     "homepage": "https://github.com/Chuanhsing/PoeCharm2",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v20250410.zip",
-            "extract_dir": "PoeCharm2-20250410"
+            "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v20260309.zip",
+            "extract_dir": "PoeCharm2-20260309"
         }
     },
     "depends": "pathofbuilding-community",
