@@ -17,11 +17,9 @@ scoop bucket add extras
 scoop bucket add versions
 scoop bucket add yzlc https://github.com/yzlc/scoop
 
-scoop install wechat foxmail awake vscode oraclejdk8 idea mobaXterm DBeaver nodejs14 git-crypt
+scoop install wechat foxmail awake vscode oraclejdk8 idea mobaXterm DBeaver nodejs14 git-crypt openconnect v2rayn-desktop
 
-scoop install vcredist2022 fortiClient
-scoop install windowsdesktop-runtime-8.0 v2rayN
-#scoop install svn wxwork win lister
+#scoop install svn wxwork win lister qbittorrent-enhanced pnpm
 
 #extras
 #scoop install potplayer anki steam another-redis-desktop-manager everything jd-gui calibre rufus
