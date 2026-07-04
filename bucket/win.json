@@ -1,46 +1,46 @@
 {
-    "version":  "latest",
-    "description":  "Windows command tools and setup scripts",
-    "homepage":  "https://github.com/yzlc/win",
-    "url":  "https://github.com/yzlc/win/archive/main.zip",
-    "bin":  [
-                [
-                    "win-main\\config\\tools\\commands\\v2rayn-update.bat",
-                    "v2rayn-update"
-                ],
-                [
-                    "win-main\\config\\tools\\commands\\shutdown23.bat",
-                    "shutdown23"
-                ]
-            ],
-    "shortcuts":  [
-                      [
-                          "win-main\\config\\tools\\poe\\app.bat",
-                          "Win - POE App"
-                      ],
-                      [
-                          "win-main\\config\\tools\\poe\\cn.bat",
-                          "Win - POE CN"
-                      ],
-                      [
-                          "win-main\\config\\tools\\zju-connect\\zju-connect.bat",
-                          "Win - zju-connect"
-                      ],
-                      [
-                          "win-main\\config\\tools\\commands\\v2rayn-update.bat",
-                          "Win - Update v2rayN"
-                      ],
-                      [
-                          "win-main\\config\\tools\\commands\\shutdown23.bat",
-                          "Win - Shutdown 23"
-                      ]
-                  ],
-    "post_install":  [
-                         "cd $dir/win-main",
-                         ". ./config/config.bat"
-                     ],
-    "pre_uninstall":  [
-                          "Set-Location $env:USERPROFILE",
-                          ". \"$dir\\win-main\\config\\tools\\uninstall.ps1\""
-                      ]
+    "version": "latest",
+    "description": "Windows command tools and setup scripts",
+    "homepage": "https://github.com/yzlc/win",
+    "url": "https://github.com/yzlc/win/archive/main.zip",
+    "bin": [
+        [
+            "win-main\\config\\tools\\commands\\v2rayn-update.bat",
+            "v2rayn-update"
+        ],
+        [
+            "win-main\\config\\tools\\commands\\shutdown23.bat",
+            "shutdown23"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "win-main\\config\\tools\\poe\\app.bat",
+            "Win - POE App"
+        ],
+        [
+            "win-main\\config\\tools\\poe\\cn.bat",
+            "Win - POE CN"
+        ],
+        [
+            "win-main\\config\\tools\\zju-connect\\zju-connect.bat",
+            "Win - zju-connect"
+        ],
+        [
+            "win-main\\config\\tools\\commands\\v2rayn-update.bat",
+            "Win - Update v2rayN"
+        ],
+        [
+            "win-main\\config\\tools\\commands\\shutdown23.bat",
+            "Win - Shutdown 23"
+        ]
+    ],
+    "post_install": [
+        "cd $dir/win-main",
+        ". ./config/config.bat"
+    ],
+    "pre_uninstall": [
+        "Set-Location $env:USERPROFILE",
+        ". \"$dir\\win-main\\config\\tools\\uninstall.ps1\""
+    ]
 }
