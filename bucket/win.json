@@ -5,21 +5,33 @@
     "url": "https://github.com/yzlc/win/archive/main.zip",
     "bin": [
         [
-            "win-main\\config\\soft\\tools\\v2rayn-update.bat",
+            "win-main\\config\\tools\\commands\\v2rayn-update.bat",
             "v2rayn-update"
         ],
         [
-            "win-main\\config\\soft\\tools\\shutdown23.bat",
+            "win-main\\config\\tools\\commands\\shutdown23.bat",
             "shutdown23"
         ]
     ],
     "shortcuts": [
         [
-            "win-main\\config\\soft\\tools\\v2rayn-update.bat",
+            "win-main\\config\\tools\\poe\\app.bat",
+            "Win - POE App"
+        ],
+        [
+            "win-main\\config\\tools\\poe\\cn.bat",
+            "Win - POE CN"
+        ],
+        [
+            "win-main\\config\\tools\\zju-connect\\zju-connect.bat",
+            "Win - zju-connect"
+        ],
+        [
+            "win-main\\config\\tools\\commands\\v2rayn-update.bat",
             "Win - Update v2rayN"
         ],
         [
-            "win-main\\config\\soft\\tools\\shutdown23.bat",
+            "win-main\\config\\tools\\commands\\shutdown23.bat",
             "Win - Shutdown 23"
         ]
     ],
