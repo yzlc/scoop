@@ -1,8 +1,28 @@
 {
     "version": "latest",
-    "description": "win",
+    "description": "Windows command tools and setup scripts",
     "homepage": "https://github.com/yzlc/win",
     "url": "https://github.com/yzlc/win/archive/main.zip",
+    "bin": [
+        [
+            "win-main\\config\\soft\\tools\\v2rayn-update.bat",
+            "v2rayn-update"
+        ],
+        [
+            "win-main\\config\\soft\\tools\\shutdown23.bat",
+            "shutdown23"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "win-main\\config\\soft\\tools\\v2rayn-update.bat",
+            "Win - Update v2rayN"
+        ],
+        [
+            "win-main\\config\\soft\\tools\\shutdown23.bat",
+            "Win - Shutdown 23"
+        ]
+    ],
     "post_install": [
         "cd $dir/win-main",
         ". ./config/config.bat"
