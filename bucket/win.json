@@ -1,8 +1,8 @@
 {
-    "version": "latest",
+    "version": "2026.07.04.1",
     "description": "Windows command tools and setup scripts",
     "homepage": "https://github.com/yzlc/win",
-    "url": "https://github.com/yzlc/win/archive/main.zip",
+    "url": "https://github.com/yzlc/win/archive/refs/heads/main.zip",
     "bin": [
         [
             "win-main\\config\\tools\\commands\\v2rayn-update.bat",
