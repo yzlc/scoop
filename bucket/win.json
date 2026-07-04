@@ -1,5 +1,5 @@
 {
-    "version": "2026.07.04.2",
+    "version": "2026.07.04.3",
     "description": "Windows command tools and setup scripts",
     "homepage": "https://github.com/yzlc/win",
     "url": "https://github.com/yzlc/win/archive/refs/heads/main.zip",
@@ -16,23 +16,23 @@
     "shortcuts": [
         [
             "win-main\\config\\tools\\poe\\app.bat",
-            "Win - POE App"
+            "POE App"
         ],
         [
             "win-main\\config\\tools\\poe\\cn.bat",
-            "Win - POE CN"
+            "POE CN"
         ],
         [
             "win-main\\config\\tools\\zju-connect\\zju-connect.bat",
-            "Win - zju-connect"
+            "zju-connect"
         ],
         [
             "win-main\\config\\tools\\commands\\v2rayn-update.bat",
-            "Win - Update v2rayN"
+            "Update v2rayN"
         ],
         [
             "win-main\\config\\tools\\commands\\shutdown23.bat",
-            "Win - Shutdown 23"
+            "Shutdown 23"
         ]
     ],
     "post_install": [
