@@ -19,6 +19,12 @@
         }
     },
     "bin": "quicmic.exe",
+    "shortcuts": [
+        [
+            "quicmic.exe",
+            "QuicMic"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
