@@ -20,6 +20,12 @@
         "   New-Item -ItemType Junction -Path \"$dir\\PathOfBuildingCommunity\" -Target \"$pobPath\" | Out-Null",
         "}"
     ],
+    "installer": {
+        "script": [
+            "# 使用Path of Building配套的ANGLE运行库，避免旧版libGLESv2.dll与新版libEGL.dll冲突",
+            "Copy-Item \"$dir\\PathOfBuildingCommunity\\libGLESv2.dll\" \"$dir\\libGLESv2.dll\" -Force"
+        ]
+    },
     "bin": "PoeCharm3.exe",
     "shortcuts": [
         [
