@@ -18,7 +18,7 @@ scoop bucket add extras
 scoop bucket add versions
 scoop bucket add yzlc https://github.com/yzlc/scoop
 
-scoop install wechat foxmail awake vscode oraclejdk8 idea winSCP DBeaver nodejs14 git-crypt openconnect v2rayn-desktop
+scoop install wechat foxmail awake vscode oraclejdk8 idea winSCP dbx nodejs14 openconnect clash-verge-rev
 
 #scoop install svn wxwork win lister qbittorrent-enhanced pnpm
 
