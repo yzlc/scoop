@@ -29,7 +29,7 @@ scoop install wechat foxmail awake vscode oraclejdk8 idea winSCP dbx nodejs14 cl
 #scoop install mysql57 python27 tomcat7
 
 # yzlc
-#scoop install oracleClient tomcat9 oraclejdk7 tim wemeet DingTalk
+#scoop install tomcat9 oraclejdk7 tim wemeet DingTalk
 #scoop bucket add games
-#scoop install poecharm Awakened-PoE-Trade poe-lurker
+#scoop install poecharm Awakened-PoE-Trade Exile-UI-zh-TW poechinese3
 ```
