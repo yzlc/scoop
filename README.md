@@ -23,7 +23,7 @@ scoop install wechat foxmail awake vscode oraclejdk8 idea winSCP dbx nodejs14 cl
 #scoop install svn wxwork win lister qbittorrent-enhanced pnpm
 
 #extras
-#scoop install potplayer anki steam another-redis-desktop-manager everything jd-gui calibre rufus
+#scoop install potplayer anki steam everything jd-gui calibre rufus
 
 #versions
 #scoop install mysql57 python27 tomcat7
