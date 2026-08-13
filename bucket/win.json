@@ -5,10 +5,6 @@
     "url": "https://github.com/yzlc/win/archive/refs/heads/main.zip",
     "bin": [
         [
-            "win-main\\config\\tools\\commands\\v2rayn-update.bat",
-            "v2rayn-update"
-        ],
-        [
             "win-main\\config\\tools\\commands\\shutdown23.bat",
             "shutdown23"
         ]
