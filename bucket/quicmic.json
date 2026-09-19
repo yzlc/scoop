@@ -1,5 +1,5 @@
 {
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "Turn any phone or tablet into a low-latency wireless microphone for your PC over the local network (browser only, no phone app).",
     "homepage": "https://github.com/Fix3dll/QuicMic",
     "license": "GPL-3.0",
@@ -10,12 +10,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Fix3dll/QuicMic/releases/download/v0.2.3/quicmic-x86_64-pc-windows-msvc.zip",
-            "hash": "6df3deaf4084b0ef5d33603ff2370afd3c1b585faeb9e8234fb3fd658a533fb6"
+            "url": "https://github.com/Fix3dll/QuicMic/releases/download/v0.2.4/quicmic-x86_64-pc-windows-msvc.zip",
+            "hash": "360842ba58c8cd31d2527510cad085ec68cdf04d413d3d625147f15602d15ce9"
         },
         "arm64": {
-            "url": "https://github.com/Fix3dll/QuicMic/releases/download/v0.2.3/quicmic-aarch64-pc-windows-msvc.zip",
-            "hash": "022c9ef1069447ec23928637c521d9367f9569705c6923743bdb20cbe1d40d22"
+            "url": "https://github.com/Fix3dll/QuicMic/releases/download/v0.2.4/quicmic-aarch64-pc-windows-msvc.zip",
+            "hash": "477270b920ef6a769a26eece562f3a2fe408fa98ae090cd1a1e491b1b3b5170d"
         }
     },
     "bin": "quicmic.exe",
