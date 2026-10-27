@@ -1,12 +1,12 @@
 {
-    "version": "0.17.0",
+    "version": "0.21.0",
     "description": "Local-first AI coding agent desktop client",
     "homepage": "https://github.com/vastsa/PI-Desktop",
     "license": "LGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vastsa/PI-Desktop/releases/download/v0.17.0/PI-Desktop-Portable-0.17.0.zip",
-            "hash": "44afb00ef5dd3086e96017dbf3c0dfdad3225cd013c154bf0892845d8af68b74"
+            "url": "https://github.com/vastsa/PI-Desktop/releases/download/v0.21.0/PI-Desktop-Portable-0.21.0.zip",
+            "hash": "64d5983d8bd6e58f7f6946a93b96f0b95f2f376717f11f3cca7356e361806716"
         }
     },
     "bin": "PI-Desktop.exe",
