@@ -1,5 +1,9 @@
 {
     "homepage": "https://www.foxmail.com/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.foxmail.com/mac/en/terms_of_service"
+    },
     "description": "你的邮件，现在有了新看法。",
     "version": "7.2.25.587",
     "url": "https://www.foxmail.com/win/download#/dl.7z",

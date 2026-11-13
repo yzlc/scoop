@@ -6,7 +6,7 @@
     "depends": "versions/autohotkey1.1",
     "architecture": {
         "64bit": {
-            "url": "https://codeload.github.com/Lailloken/Exile-UI/zip/refs/tags/v1.65.4",
+            "url": "https://codeload.github.com/Lailloken/Exile-UI/zip/refs/tags/v1.65.4#/dl.zip",
             "hash": "76bc4264a1336c5a05a9823c201f8b6132b80ed243aaa9ae09bb857a5636e70a",
             "extract_dir": "Exile-UI-1.65.4"
         }
@@ -37,7 +37,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://codeload.github.com/Lailloken/Exile-UI/zip/refs/tags/v$version",
+                "url": "https://codeload.github.com/Lailloken/Exile-UI/zip/refs/tags/v$version#/dl.zip",
                 "extract_dir": "Exile-UI-$version"
             }
         }

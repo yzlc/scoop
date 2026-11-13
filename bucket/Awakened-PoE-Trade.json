@@ -3,6 +3,7 @@
     "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.29.108/Awakened-PoE-Trade-3.29.108.exe#/Awakened-PoE-Trade.exe",
     "bin": "Awakened-PoE-Trade.exe",
     "homepage": "https://github.com/SnosMe/awakened-poe-trade",
+    "license": "MIT",
     "shortcuts": [
         [
             "Awakened-PoE-Trade.exe",
