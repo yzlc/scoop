@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.foxmail.com/",
     "description": "你的邮件，现在有了新看法。",
-    "version": "7.2.25.508",
-    "url": "https://dldir1.qq.com/foxmail/windows/FoxmailSetup_7.2.25.508.exe#/dl.7z",
-    "hash": "1269e18259868eccc7c51ec5b0aee5f608569b07670ea62b322fc94ace43fd59",
+    "version": "7.2.25.587",
+    "url": "https://www.foxmail.com/win/download#/dl.7z",
+    "hash": "7f4344027903a5b9d149f6b5cc978c5df91457d16593de6c6f8975fe1209534f",
     "pre_install": [
         "$file = 'FMStorage.list'",
         "if (!(Test-Path \"$persist_dir\\$file\")) {",
@@ -19,11 +19,16 @@
         "FMStorage.list"
     ],
     "checkver": {
-        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/versions/Foxmail.latest",
-        "regex": "FoxmailSetup_([\\d.]+).exe"
+        "script": [
+            "$response = Invoke-WebRequest -Uri 'https://www.foxmail.com/win/download' -Method Head -UseBasicParsing",
+            "$uri = $response.BaseResponse.RequestMessage.RequestUri.AbsoluteUri",
+            "if (!$uri) { $uri = $response.BaseResponse.ResponseUri.AbsoluteUri }",
+            "[regex]::Match($uri, 'FoxmailSetup_([\\d.]+)\\.exe').Groups[1].Value"
+        ],
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://dldir1.qq.com/foxmail/windows/FoxmailSetup_$version.exe#/dl.7z"
+        "url": "https://www.foxmail.com/win/download#/dl.7z"
     },
     "shortcuts": [
         [

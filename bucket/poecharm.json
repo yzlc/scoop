@@ -34,8 +34,9 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/Chuanhsing/PoeCharm2",
-        "regex": "releases/tag/v(\\d{8})"
+        "url": "https://api.github.com/repos/Chuanhsing/PoeCharm2/tags?per_page=1",
+        "jsonpath": "$[0].name",
+        "regex": "v(\\d{8})"
     },
     "autoupdate": {
         "architecture": {
