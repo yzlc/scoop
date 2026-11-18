@@ -1,55 +1,96 @@
 {
-    "version": "20260309",
-    "description": "PoeCharm2 - Path of Exile game tools with Path of Building integration",
-    "homepage": "https://github.com/Chuanhsing/PoeCharm2",
-    "license": "MIT",
+    "version": "20260807",
+    "description": "PoeCharm - Chinese translation for Path of Building Community (Path of Exile 1)",
+    "homepage": "https://github.com/Chuanhsing/PoeCharm",
+    "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v20260309.zip",
-            "extract_dir": "PoeCharm2-20260309"
+            "url": "https://github.com/Chuanhsing/PoeCharm/archive/ac05b82ca47009780c1ebd6518108e876ccd44b5.zip",
+            "hash": "b236dc1f428feba0a74573564e6642a4f136561e7abba13a358f90e21ef35bae",
+            "extract_dir": "PoeCharm-ac05b82ca47009780c1ebd6518108e876ccd44b5"
         }
     },
     "depends": "pathofbuilding-community",
     "pre_install": [
-        "# 安装Path of Building依赖",
-        "scoop install pathofbuilding-community",
-        "",
-        "# 创建符号链接到PoeCharm目录",
         "$pobPath = (scoop prefix pathofbuilding-community)",
         "if (!(Test-Path \"$dir\\PathOfBuildingCommunity\")) {",
         "   New-Item -ItemType Junction -Path \"$dir\\PathOfBuildingCommunity\" -Target \"$pobPath\" | Out-Null",
+        "}",
+        "if (!(Test-Path \"$dir\\Data\\Settings.conf\")) {",
+        "    New-Item -ItemType File -Path \"$dir\\Data\\Settings.conf\" | Out-Null",
         "}"
     ],
     "installer": {
         "script": [
-            "# 使用Path of Building配套的ANGLE运行库，避免旧版libGLESv2.dll与新版libEGL.dll冲突",
-            "Copy-Item \"$dir\\PathOfBuildingCommunity\\libGLESv2.dll\" \"$dir\\libGLESv2.dll\" -Force"
+            "$launcher = @'",
+            "$ErrorActionPreference = 'Stop'",
+            "foreach ($dll in @('libGLESv2.dll', 'libEGL.dll', 'z.dll', 'lua51.dll')) {",
+            "    $source = Join-Path $PSScriptRoot \"PathOfBuildingCommunity\\$dll\"",
+            "    $target = Join-Path $PSScriptRoot $dll",
+            "    if (!(Test-Path -LiteralPath $target) -or (Get-FileHash -LiteralPath $source).Hash -ne (Get-FileHash -LiteralPath $target).Hash) {",
+            "        Copy-Item -LiteralPath $source -Destination $target -Force",
+            "    }",
+            "}",
+            "$pobLaunchFile = Join-Path $PSScriptRoot 'PathOfBuildingCommunity\\Launch.lua'",
+            "$compat = @\"",
+            "-- PoeCharm: use the current PoB editor instead of the embedded legacy editor.",
+            "if charm then",
+            "    local originalLoadModule = LoadModule",
+            "    function LoadModule(moduleName, ...)",
+            "        if moduleName == \"Classes/EditControl\" then",
+            "            return assert(loadfile(GetScriptPath() .. \"/Classes/EditControl.lua\"))(...)",
+            "        end",
+            "        return originalLoadModule(moduleName, ...)",
+            "    end",
+            "end",
+            "\"@",
+            "if (![IO.File]::ReadAllText($pobLaunchFile).Contains('-- PoeCharm: use the current PoB editor')) {",
+            "    Copy-Item -LiteralPath $pobLaunchFile -Destination \"$pobLaunchFile.poecharm.original\" -Force",
+            "    [IO.File]::AppendAllText($pobLaunchFile, [Environment]::NewLine + $compat, [Text.UTF8Encoding]::new($false))",
+            "}",
+            "Start-Process -FilePath (Join-Path $PSScriptRoot 'PoeCharm3.exe') -WorkingDirectory $PSScriptRoot -WindowStyle Normal",
+            "'@",
+            "Set-Content \"$dir\\poecharm-launch.ps1\" $launcher -Encoding UTF8",
+            "$shortcutLauncher = @'",
+            "Set shell = CreateObject(\"WScript.Shell\")",
+            "Set fso = CreateObject(\"Scripting.FileSystemObject\")",
+            "dir = fso.GetParentFolderName(WScript.ScriptFullName)",
+            "shell.Run \"powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"\"\" & dir & \"\\poecharm-launch.ps1\"\"\", 0, False",
+            "'@",
+            "Set-Content \"$dir\\poecharm-launch.vbs\" $shortcutLauncher -Encoding ASCII",
+            "Copy-Item \"$dir\\PathOfBuildingCommunity\\libGLESv2.dll\", \"$dir\\PathOfBuildingCommunity\\libEGL.dll\", \"$dir\\PathOfBuildingCommunity\\z.dll\", \"$dir\\PathOfBuildingCommunity\\lua51.dll\" $dir -Force"
         ]
     },
-    "bin": "PoeCharm3.exe",
-    "shortcuts": [
+    "bin": [
         [
-            "PoeCharm3.exe",
-            "PoeCharm"
+            "poecharm-launch.ps1",
+            "poecharm3"
         ]
     ],
+    "shortcuts": [
+        [
+            "poecharm-launch.vbs",
+            "PoeCharm",
+            "",
+            "PoeCharm3.exe"
+        ]
+    ],
+    "persist": "Data\\Settings.conf",
     "checkver": {
-        "url": "https://api.github.com/repos/Chuanhsing/PoeCharm2/tags?per_page=1",
-        "jsonpath": "$[0].name",
-        "regex": "v(\\d{8})"
+        "url": "https://github.com/Chuanhsing/PoeCharm/commits/main.atom",
+        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",
+        "replace": "${1}${2}${3}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Chuanhsing/PoeCharm2/archive/refs/tags/v$version.zip",
-                "extract_dir": "PoeCharm2-$version"
+                "url": "https://github.com/Chuanhsing/PoeCharm/archive/$matchSha.zip",
+                "extract_dir": "PoeCharm-$matchSha"
             }
         }
     },
     "notes": [
-        "PoeCharm2已成功安装！",
-        "Path of Building Community 已链接到 PoeCharm2 目录",
-        "启动程序: PoeCharm3.exe",
-        "软件启动后可通过内置功能自动更新"
+        "适用于流放之路 1，支持简体和繁体中文翻译。",
+        "通过开始菜单 PoeCharm 或 poecharm3 启动；启动器会同步 Path of Building 的运行库。"
     ]
 }
