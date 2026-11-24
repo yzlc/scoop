@@ -20,7 +20,7 @@ scoop bucket add yzlc https://github.com/yzlc/scoop
 
 scoop install wechat foxmail awake vscode oraclejdk8 idea winSCP dbx nodejs14 v2rayN
 
-#scoop install svn wxwork win lister qbittorrent-enhanced pnpm mitmproxy pwsh winSCP connect
+#scoop install pi-desktop wxwork win lister qbittorrent-enhanced pnpm mitmproxy pwsh winSCP connect
 
 #extras
 #scoop install potplayer anki steam everything jd-gui calibre rufus
@@ -31,5 +31,5 @@ scoop install wechat foxmail awake vscode oraclejdk8 idea winSCP dbx nodejs14 v2
 # yzlc
 #scoop install tomcat9 oraclejdk7 tim wemeet DingTalk
 #scoop bucket add games
-#scoop install pobtools poecharm Awakened-PoE-Trade Exile-UI-zh-TW poechinese3
+#scoop install pobtools pobtools Awakened-PoE-Trade Exile-UI-zh-TW poechinese3
 ```
