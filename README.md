@@ -26,10 +26,9 @@ scoop install wechat foxmail awake vscode oraclejdk8 idea dbx nodejs14 v2rayN
 #scoop install potplayer anki steam everything jd-gui calibre rufus
 
 #versions
-#scoop install mysql57 python27 tomcat7
+#scoop install mysql57 python27 tomcat7 tomcat9
 
 # yzlc
-#scoop install tomcat9 oraclejdk7 tim wemeet DingTalk
-#scoop bucket add games
+#scoop install oraclejdk7
 #scoop install pobtools Awakened-PoE-Trade Exile-UI-zh-TW poechinese3
 ```
